@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-from django.http import HttpResponse
-
-def index(request):    
-    return HttpResponse(u"Olá mundo!")
+from django.shortcuts import render
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
